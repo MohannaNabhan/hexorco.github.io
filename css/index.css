@@ -16,7 +16,7 @@
     width: 60%;
 }
 #presentation .content2{
-    padding-top: 150px;
+    padding-top: 190px;
     height: 100%;
     width: 40%;
 }
@@ -25,38 +25,45 @@
     letter-spacing: 1.5px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.379);
-    margin-bottom: 15px;
+    margin-bottom: -5px;
 }
 #presentation .content2 h1{
-    
-    font-size: 40px;
+    letter-spacing: 1px;
+    font-size: 50px;
 }
 #presentation .content2 p{
-    margin-top: 15px;
-    font-size: 16px;
+    margin-top: 25px;
+    font-size: 17px;
     font-weight: 300;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
 }
 #presentation .content2 p span{
     font-weight: 800;
 }
 #presentation .content2 a{
+    border-radius: 20px;
     transition: all .3s ease-in-out;
     position: relative;
-    top: 30px;
-    background-color: rgba(0, 0, 0, 0.303);
+    top: 60px;
+    background-color: rgba(152, 152, 152, 0.144);
     padding: 14px 25px 14px 25px;
     margin-right: 10px;
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 #presentation .content2 a:hover{
-    border-radius: 20px;
     color: rgb(152, 152, 152);
 }
 #presentation .btn2{
-    border: solid 2px rgba(152, 152, 152, 0.144);
+    left: -20px;
     background-color: transparent !important;
+    color: rgba(255, 255, 255, 0.803);
+}
+#presentation .content2 a span{
+    transition: all .3s ease-in-out;
+}
+#presentation .content2 a:hover span{
+    color: var(--color_primary_dark) !important;
 }
 .middle{
     position: absolute;
@@ -67,7 +74,7 @@
 .mouse{
     width: 30px;
     height: 55px;
-    border: 1px solid #ffffff5b;
+    border: 1px solid #ffffff;
     border-radius: 60px;
 }
 .mouse::before{
