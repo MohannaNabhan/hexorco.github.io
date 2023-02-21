@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    font-family: "Poppins" , sans-serif;
+    color: white;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0 40px rgb(40 ,40,40) inset !important;
+}
+:root{
+    --color_primary:rgb(255, 238, 88);
+    --color_primary_middle:rgb(199, 183, 42);
+    --color_primary_dark:rgb(149, 137, 32);
+    --backgroud_Color:rgb(35,35,35);
+    --NavBar_Color: rgb(27,27,27);
+}
+body{
+    background-color: var(--backgroud_Color);
+    color: white;
+}
+::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--color_primary_middle);
+    border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:  var(--color_primary_dark);
+}
+::-webkit-scrollbar-track{
+    background: var(--backgroud_Color);
+    border-radius: 0px;
+    box-shadow: inset 0px 0px 0px 0px var(--backgroud_Color);
+}
+
+.text-color{
+    color: rgb(224, 207, 52) !important;
+}
+.text-shadow{
+    letter-spacing: 0.4px;
+    text-shadow: 0px 0px 8px var(--color_primary) !important;
+}
+.container{
+    position: relative;
+    max-width: 1200px;
+    margin: 0px auto;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+#navbar{
+    left: 0;
+    top: 0;
+    z-index: 99999999;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+}
+
+
+
+

@@ -1,0 +1,98 @@
+#presentation{
+    position: relative;
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+    width: 100%;
+}
+#presentation .container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+#presentation .content1{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 60%;
+}
+#presentation .content2{
+    padding-top: 150px;
+    height: 100%;
+    width: 40%;
+}
+#presentation .content2 h2{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.379);
+    margin-bottom: 15px;
+}
+#presentation .content2 h1{
+    
+    font-size: 40px;
+}
+#presentation .content2 p{
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+#presentation .content2 p span{
+    font-weight: 800;
+}
+#presentation .content2 a{
+    transition: all .3s ease-in-out;
+    position: relative;
+    top: 30px;
+    background-color: rgba(0, 0, 0, 0.303);
+    padding: 14px 25px 14px 25px;
+    margin-right: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+#presentation .content2 a:hover{
+    border-radius: 20px;
+    color: rgb(152, 152, 152);
+}
+#presentation .btn2{
+    border: solid 2px rgba(152, 152, 152, 0.144);
+    background-color: transparent !important;
+}
+.middle{
+    position: absolute;
+    bottom: 20px;
+    left: calc(100% / 2);
+    transform: translate(-50%,-50%);
+}
+.mouse{
+    width: 30px;
+    height: 55px;
+    border: 1px solid #ffffff5b;
+    border-radius: 60px;
+}
+.mouse::before{
+    content: "";
+    width: 2px;
+    height: 13px;
+    position: absolute;
+    top: 30px;
+    background: #fbf9f990;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    opacity: 1;
+    animation: mouse 3s infinite;
+}
+@keyframes mouse {
+    from{
+        opacity: 1;
+        top: 8px;
+    }
+    to{
+        opacity: 0;
+        top: 20px;
+    }
+}
+  
+
+
