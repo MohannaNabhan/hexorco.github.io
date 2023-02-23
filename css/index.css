@@ -1,7 +1,7 @@
 #presentation{
     position: relative;
     margin-top: 60px;
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
     width: 100%;
 }
 #presentation .container{
@@ -46,7 +46,7 @@
     position: relative;
     top: 60px;
     background-color: rgba(152, 152, 152, 0.144);
-    padding: 14px 25px 14px 25px;
+    padding: 14px 45px 14px 45px;
     margin-right: 10px;
     text-decoration: none;
     letter-spacing: 2px;
@@ -67,7 +67,7 @@
 }
 .middle{
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     left: calc(100% / 2);
     transform: translate(-50%,-50%);
 }
@@ -100,6 +100,301 @@
         top: 20px;
     }
 }
-  
 
 
+#skills{
+    margin-top: 50px;
+}
+#skills .container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+#skills .container .content-1{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+#skills .skill-content-back{
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(43, 43, 43, 0.692);
+    width: calc(100% / 3 - 28px);
+    height: 180px;
+    margin: 10px;
+    border-radius: 10px 5px 10px 10px;
+    animation-name: move_skills;  
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    left: 0;
+}
+@keyframes move_skills {
+    0%   {
+        left: 0px;
+        top: 0px;
+        transform: rotate(0deg);
+    }
+    25%  {
+        left: -10px;
+        top: -10px;
+        transform: rotate(-2deg);
+
+    }
+    50%  {
+
+        transform: rotate(2deg);
+        left: 20px;
+        top: 20px;
+    }
+    100% {
+        transform: rotate(0deg);
+        top: 0;
+        left: 0;
+    }
+}
+#skills .container .content-2{
+    
+    animation-name: img_move_skills;  
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes img_move_skills {
+    0%   {
+        transform: rotate(0deg);
+    }
+    25%  {
+        transform: rotate(10deg);
+
+    }
+    50%  {
+
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+#skills .skill-content-back h1{
+    text-align: center;
+    width: 260px;
+    position: absolute;
+    left: -67px;
+    top: 14px;
+    transform: rotate(-20deg);
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+}
+#skills .skill-content-back i {
+    position: absolute;
+    left: 0;
+    top: 55px;
+    font-size: 56px;
+    text-align: center;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.741);
+}
+#skills .skill-content-back h2{
+    position: absolute;
+    bottom: 35px;
+    width: 100%;
+    left: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+#skills .skill-content-back h3{
+    position: absolute;
+    bottom: 17px;
+    left: 0;
+    width: 100%;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.379);
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-align: center;
+
+}
+#skills .container .content-2{
+    width: 50%;
+}
+
+
+
+#aboutus .content-back{
+    position: relative;
+    margin: 10px;
+    margin-top: 50px;
+    height: 300px;
+    background-color: rgba(43, 43, 43, 0.775);
+    margin-bottom: 90px;
+    transition: all .3s ease-in-out;
+    border-radius: 10px 20px 20px 10px;
+}
+#aboutus .content-back:hover{
+    transform: translate(-4px, -4px);
+
+}
+#aboutus .content-back .content-decoration{
+    position: absolute;
+    right: -40px;
+    top: -70px;
+    width: 450px;
+    height: 450px;
+    transform: rotate(-15deg);
+}
+#aboutus .content-back h1{
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+#aboutus .content-back p{
+    position: absolute;
+    left: 70px;
+    top: 115px;
+    width: 50%;
+    color: rgba(255, 255, 255, 0.807);
+}
+#aboutus .content-back a{
+    position: absolute;
+    border-radius: 20px;    
+    left: 70px;
+    bottom: 40px;
+    transition: all .3s ease-in-out;
+    background-color: rgba(152, 152, 152, 0.144);
+    padding: 14px 35px 14px 35px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: var(--color_primary);
+    font-weight: 600;
+}
+#aboutus .content-back a:hover{
+    transform: scale(1.05);
+    color: var(--color_primary_dark);
+
+}
+
+
+
+
+
+
+
+
+#footer{
+    background-color: var(--NavBar_Color);
+    width: 100%;
+    height: 70px;
+}
+#footer h1{
+    top: 25px;
+    left: 10px;
+    position: absolute;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 1070px) {
+    #presentation .content1{
+        width: 100%;
+        height: 400px;
+    }
+    #presentation .content1 .img{
+        position: absolute;
+        top: -140px;
+        right: calc(100% / 2 - 200px);
+        width: 400px !important;
+    }
+    #presentation .content2{
+        padding-top: 0;
+        height: 300px;
+        width: 100%;
+        text-align: center;
+    }
+    #presentation .content2 p{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        text-align: center;
+    }
+    #presentation .content2 a{
+        top: 25px;
+    }
+    .mouse{
+        visibility: hidden;
+    }
+
+    
+    #skills .container .content-1{
+        z-index: 1;
+        width: 100%;
+        justify-content: center;
+    }
+    #skills .container .content-2{
+        width: 100%;
+        margin-top: -600px;
+    }
+    #skills .container .content-2 .img{
+        width: 600px !important;
+        position: absolute;
+        right: -100px;
+    }
+
+
+    #aboutus .content-back{
+        margin-top: 150px;
+        height: 280px;
+    }
+    #aboutus .content-back .content-decoration{
+        right: -40px;
+        top: -100px;
+        width: 200px;
+        height: 200px;
+        transform: rotate(-30deg);
+    }
+    #aboutus .content-back h1{
+        position: absolute;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        top: 50px;
+    }
+    #aboutus .content-back p{
+        position: relative;
+        left: 10%;
+        width: 80%;
+        top: 115px;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.807);
+        margin-bottom: 10px;
+    }
+    #aboutus .content-back a{
+        position: absolute;
+        border-radius: 20px;    
+        left: calc(100% / 2 - 80px);
+        bottom: 20px;
+    }
+}
+@media only screen and (max-width: 571px) {
+    #aboutus .content-back{
+        margin-top: 150px;
+        height: 340px;
+    }
+}
+
+
+@media only screen and (max-width: 471px) {
+    #aboutus .content-back{
+        margin-top: 150px;
+        height: 340px;
+    }
+}
