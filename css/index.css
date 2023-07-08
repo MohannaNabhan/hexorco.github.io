@@ -340,6 +340,15 @@
     position: relative;
 
 }
+.img-decoration-1{
+    position: absolute;
+    margin: 0px auto;
+    top: -200px;
+    left: -200px;
+    height: 800px;
+    z-index: -1;
+    position: absolute;
+}
 #projects .pnl-1 h1{
     width: 90%;
     margin-left: 5%;
@@ -372,9 +381,6 @@
 #projects .pnl-1 a:hover{
     background-color:rgba(215, 126, 169, 0.771);
 }
-
-
-
 #projects .pnl-2{
     position: relative;
     width: 50%;
@@ -408,8 +414,6 @@
     top: calc(100% / 2 - 200px);
     left: 5px;
 }
-
-
 @keyframes img_move_projects-1 {
     0%{
         transform: translateY(-5px);
@@ -457,6 +461,143 @@
 
 
 
+#contact{
+    height: 500px;
+}
+#contact .container{
+    border-radius: 40px 40px 0 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--NavBar_Color);
+}
+#contact .pnl-1{
+    position: relative;
+    width: 45%;
+    height: 100%;
+}
+
+#contact .pnl-1 lottie-player{
+    position: relative;
+    width: 120%;
+    height: 120%;
+}
+
+
+
+#contact .pnl-2{
+    position: relative;
+    width: 55%;
+    height: 100%;
+}
+#contact .pnl-2 h1{
+    position: relative;
+    margin-top: 40px;
+    font-size: 37px;
+    left: 10%;
+    width: 80%;
+    text-align: center;
+}
+#contact .pnl-2 p{
+    margin-bottom: 20px;
+    position: relative;
+    left: 15%;
+    text-align: center;
+    width: 70%;
+    margin-top: -10px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.912);
+}
+#contact .pnl-2 .input-text{
+    position: relative;
+    color: white;
+    overflow: hidden;
+    background-color: rgba(152, 152, 152, 0.093);
+    width: 80%;
+    left: 10%;
+    height: 40px;
+}
+#contact .pnl-2 .input-text input{
+    color: white;
+    position: absolute;
+    width: 87%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    left: calc(10% + 5px);
+}
+#contact .pnl-2 .input-text i{
+    position: absolute;
+    top: 0;
+    width: calc(10% - 5px);
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 11px;
+    left: 0;
+    background-color: rgb(64, 64, 64);
+    text-shadow: 0px 0px 5px rgba(192, 115, 152, 0.559);
+    color: rgb(215,126,169);
+}
+
+
+
+
+
+
+#contact .pnl-2 .input-area{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    overflow: hidden;
+    background-color: rgba(152, 152, 152, 0.093);
+    height: 200px;
+    min-height: 200px;
+    margin-top: 15px;
+}
+#contact .pnl-2 .input-area textarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+#contact .pnl-2 button{
+    position: relative;
+    margin-top: 10px;
+    width: 80%;
+    height: 50px;
+    border-radius: 5px;
+    left: 10%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    background-color: rgba(215, 109, 120, 0.723);
+    
+    -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 0px rgba(215, 109, 120, 0.723);
+}
+#contact .pnl-2 button:hover{
+    color: rgba(245, 245, 245, 0.616);
+    background-color: rgba(215, 109, 120, 0.319);
+}
+
+
 
 
 
@@ -474,15 +615,6 @@
     font-weight: 500;
 }
 
-.img-decoration-1{
-    position: absolute;
-    margin: 0px auto;
-    top: -200px;
-    left: -200px;
-    height: 800px;
-    z-index: -1;
-    position: absolute;
-}
 
 
 @media only screen and (max-width: 1070px) {
