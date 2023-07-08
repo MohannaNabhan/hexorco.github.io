@@ -74,4 +74,11 @@ body{
 
 
 
-
+#navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: var(--NavBar_Color);
+}
