@@ -660,3 +660,17 @@
     }
 
 }
+@media only screen and (max-width: 418px) {
+    #aboutus .content-back{
+        height: 340px;
+    }
+
+    #projects .title{
+        font-size: 37px;
+        margin-top: -50px;
+    }
+
+    #projects .title span{
+        visibility: hidden;
+    }
+}
