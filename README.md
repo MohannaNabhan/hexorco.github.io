@@ -1,4 +1,5 @@
 ### 👨‍💻 I am a programmer 🤓 specialized in the development of web 💻🌐 pages and applications 📱 for companies. Contact me now! 🚀 👋
+ABOUT ME.👨 💻 I am a self-taught programmer with 3 years of experience in various programming languages, passionate about 🖥️ and committed to providing efficient solutions to my clients.
 
 <!--
 **tirldev/tirldev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
