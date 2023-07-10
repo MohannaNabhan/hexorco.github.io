@@ -1,4 +1,4 @@
-### Hi there 👋
+### 👨‍💻 I am a programmer 🤓 specialized in the development of web 💻🌐 pages and applications 📱 for companies. Contact me now! 🚀 👋
 
 <!--
 **tirldev/tirldev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
