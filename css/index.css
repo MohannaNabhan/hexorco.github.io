@@ -513,6 +513,8 @@
     color: rgba(255, 255, 255, 0.912);
 }
 #contact .pnl-2 .input-text{
+    border-radius: 5px;
+    margin-top: 10px;
     position: relative;
     color: white;
     overflow: hidden;
@@ -537,9 +539,9 @@
     width: calc(10% - 5px);
     height: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
-    padding-top: 11px;
+    padding-top: 12px;
     left: 0;
     background-color: rgb(64, 64, 64);
     text-shadow: 0px 0px 5px rgba(192, 115, 152, 0.559);
@@ -548,17 +550,16 @@
 
 
 
-
-
-
 #contact .pnl-2 .input-area{
+    border-radius: 5px;
     position: relative;
     width: 80%;
     left: 10%;
     overflow: hidden;
     background-color: rgba(152, 152, 152, 0.093);
-    height: 200px;
-    min-height: 200px;
+    height: 130px;
+    min-height: 130px;
+    max-height: 130px;
     margin-top: 15px;
 }
 #contact .pnl-2 .input-area textarea{
@@ -572,7 +573,6 @@
     padding-left: 10px;
     padding-top: 10px;
 }
-
 #contact .pnl-2 button{
     position: relative;
     margin-top: 10px;
@@ -761,8 +761,37 @@
 
 
 
+
+
+
+
        
 }
+@media only screen and (max-width: 800px) {
+    #contact{
+        height: auto;
+    }
+    #contact .pnl-1{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    #contact .pnl-1 lottie-player{
+        width: 50%;
+        margin-bottom: -40px;
+        margin-top: 20px;
+        left: calc(100% / 2 - 25% - 5px);
+    }
+    #contact .pnl-2{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
 @media only screen and (max-width: 571px) {
     #aboutus .content-back{
         margin-top: 150px;

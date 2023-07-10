@@ -15,12 +15,11 @@
     <link rel="stylesheet" href="./css/fontawesome.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/index.css">
+    
 </head>
 <body>
-
-    <nav id="navbar">
-        
-    </nav>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <div id="alert"></div>
 
     <section id="presentation">
         <div class="container">
@@ -147,14 +146,24 @@
             <div class="pnl-2">
                 <h1><span style="color: var(--color-red); text-shadow: 0px 0px 4px var(--color-red); ">CONT</span>ACT US<span style="color: var(--color-red); text-shadow: 0px 0px 4px var(--color-red); ">.</span></h1>    
                 <p><span style="color: var(--color-pink); text-shadow: 0px 0px 4px var(--color-pink); ">Contact</span> us to develop your ideal <span style="color: var(--color-green); text-shadow: 0px 0px 4px var(--color-red); ">website</span>.</p>
-                <div class="input-text">
-                    <input type="text" id="email" placeholder="EMAIL">
-                    <i class="far fa-at"></i>
-                </div>
-                <div class="input-area">
-                    <textarea id="" placeholder="Comentary"></textarea>
-                </div>
-                <button>SEND</button>
+                <form id="contact-form">
+                    <div class="input-text">
+                        <input type="text" id="email" placeholder="Email" required>
+                        <i class="far fa-at"></i>
+                    </div>
+                    <div class="input-text">
+                        <input type="text" id="name" placeholder="Name" required>
+                        <i class="fal fa-user"></i>
+                    </div>
+                    <div class="input-text">
+                        <input type="text" id="lname" placeholder="Last Name" required>
+                        <i class="fal fa-user-plus"></i>
+                    </div>
+                    <div class="input-area">
+                        <textarea id="comentary" placeholder="Comentary"></textarea>
+                    </div>
+                    <button>SEND</button>
+                </form>
             </div>
         </div>
     </section>
