@@ -1006,6 +1006,38 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+#contact .pnl-2 .text-area label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+#contact .pnl-2 .text-area textarea {
+  width: 100%;
+  resize: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0.375rem;
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 37 36 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+#contact .pnl-2 .text-area textarea:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 37 36 / var(--tw-bg-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 footer {
   height: 5rem;
   --tw-bg-opacity: 1;
@@ -1297,6 +1329,10 @@ footer h1 {
 
 .mt-7 {
   margin-top: 1.75rem;
+}
+
+.table {
+  display: table;
 }
 
 .grid {
